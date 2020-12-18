@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="https://cdn.icon-icons.com/icons2/1526/PNG/512/checklist_106575.png">
+  </head>
+  <body>
+    <header>
+      <h1><span class="title">Todo</span>List</h1>
+    </header>
+    <h4>Rencanakan kegiatanmu hari ini</h4>
+    <form>
+      <input type="text" class="todo-input" placeholder="Masukkan pekerjaan disini..."/>
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="semua">Semua</option>
+          <option value="selesai">Selesai</option>
+          <option value="belumSelesai">Belum Selesai</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
